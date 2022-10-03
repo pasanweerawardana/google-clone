@@ -107,7 +107,7 @@ main{
     display: flex;
     height: calc(100vh - 560px);
     align-items: flex-end;
-    min-height: 150px;
+    min-height: 92px;
     max-height: 290px;
 }
 
@@ -123,6 +123,14 @@ main{
     height: 44px;
     padding: 0 8px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ico-mic svg{
+    width: 24px;
+    height: 24px;
 }
 
 #search-form{
@@ -139,6 +147,7 @@ main{
     width: 100%;
     border: 1px solid #dfe1e5;
     border-radius: 24px;
+    margin-top: 6px;
     padding: 0 8px 0 14px;
     display: flex;
 }
@@ -188,9 +197,48 @@ main{
 }
 
 #sec-lang{
+    margin-top: -8px;
     font-size: 13px;
+    color: #4d5156;
+    line-height: 28px;
 }
 
 #sec-lang a{
     padding: 0 3px;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f2f2f2;
+}
+
+#country{
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757a;
+}
+
+#nav-links{
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#nav-links div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#nav-links a{
+    display: block;
+    font-size: 14px;
+    padding: 15px;
+    white-space: nowrap;
+    color: #70757a;
 }
