@@ -15,3 +15,9 @@
         padding: 10px;
     }
 }
+
+@media all and (mix-height:500px){
+    footer{
+        position: relative;
+    }
+}
