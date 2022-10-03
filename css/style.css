@@ -1,41 +1,32 @@
 @import url(reset.css);
 
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.clearfix{
+.clearfix {
     clear: both;
 }
 
-.clearfix::after{
+.clearfix::after {
     display: block;
     content: "";
     clear: both;
 }
 
-/* header */
-
-header>a{
-    display: block;
-    color: rgba(0,0,0,.87);
-    font-size: 13px;
-    line-height: 24px;
-}
-
-header{
+header {
     display: flex;
     justify-content: flex-end;
-    padding: 6px;
     align-items: center;
+    padding: 6px;
     height: 60px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -43,45 +34,51 @@ a:hover{
     text-decoration: underline;
 }
 
-#apps>svg{
-    width: 24px;
-    height: 24px;
-    fill: #5f6368;
+header > a {
+    display: block;
+    color: rgba(0,0,0,.87);
+    font-size: 13px;
+    line-height: 24px;
 }
 
-#apps{
+#apps {
     display: flex;
-    height: 40px;
     width: 40px;
+    height: 40px;
+    margin: 4px;
     border-radius: 100%;
     cursor: pointer;
     justify-content: center;
     align-items: center;
 }
 
-#apps:hover{
-    background-color: rgba(60, 64, 67, 0.8);
+#apps:hover {
+    background-color: rgba(60, 64, 67, 0.08);
 }
 
-#gmail,#images{
-    padding-right:15px ;
+#apps > svg {
+    width: 24px;
+    height: 24px;
+    fill: #5f6368;
 }
 
-#images{
+#images {
     padding: 0 15px;
 }
 
-#sign-in{
+#sign-in {
     font-size: 14px;
     line-height: 1rem;
     font-weight: 500;
-    background-color: rgb(26, 115, 232);
     color: white;
+    background-color: rgb(26, 115, 232);
     border: 1px solid transparent;
     border-radius: 4px;
     padding: 9px 23px;
     margin: 0 12px 0 8px;
     min-width: 96px;
+    text-align: center;
+    letter-spacing: .25px;
 }
 
 #sign-in:hover{
@@ -100,3 +97,100 @@ a:hover{
     box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sec-logo{
+    display: flex;
+    height: calc(100vh - 560px);
+    align-items: flex-end;
+    min-height: 150px;
+    max-height: 290px;
+}
+
+#ico-search {
+    padding-right: 13px;
+    width: 33px;
+    height: 44px;
+    fill: #9aa0a6;
+}
+
+#ico-mic{
+    width: 44px;
+    height: 44px;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+#search-form{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-input{
+    width: 100%;
+    max-width: 584px;
+    width: 100%;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 0 8px 0 14px;
+    display: flex;
+}
+
+#form-input:hover, 
+#form-input:focus-within{
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: transparent;
+}
+
+#form-input input{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+
+#sec-buttons{
+    padding-top: 18px;
+}
+
+#sec-buttons button{
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    font-size: 14px;
+    color: #3c4043;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    min-width: 54px;
+    cursor: pointer;
+    user-select: none;
+    height: 36px;
+    border-radius: 4px;
+}
+
+#sec-buttons button:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+
+#sec-buttons button:focus{
+    border: 1px solid #4285f4;
+    outline: none;
+}
+
+#sec-lang{
+    font-size: 13px;
+}
+
+#sec-lang a{
+    padding: 0 3px;
+}
