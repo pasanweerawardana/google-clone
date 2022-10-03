@@ -1,0 +1,102 @@
+@import url(reset.css);
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/* header */
+
+header>a{
+    display: block;
+    color: rgba(0,0,0,.87);
+    font-size: 13px;
+    line-height: 24px;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px;
+    align-items: center;
+    height: 60px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#apps>svg{
+    width: 24px;
+    height: 24px;
+    fill: #5f6368;
+}
+
+#apps{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+#apps:hover{
+    background-color: rgba(60, 64, 67, 0.8);
+}
+
+#gmail,#images{
+    padding-right:15px ;
+}
+
+#images{
+    padding: 0 15px;
+}
+
+#sign-in{
+    font-size: 14px;
+    line-height: 1rem;
+    font-weight: 500;
+    background-color: rgb(26, 115, 232);
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 9px 23px;
+    margin: 0 12px 0 8px;
+    min-width: 96px;
+}
+
+#sign-in:hover{
+    text-decoration: none;
+    background-color: #1b66c9;
+    box-shadow:  0 1px 3px 1px rgba(66,64,67,.15),0 1px 2px 0 rgba(60,64,67,.3);
+}
+
+#sign-in:focus{
+    background-color: #1c5fba;
+    box-shadow:  0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+}
+
+#sign-in:active{
+    background-color: #1b63c1;
+    box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+}
+
