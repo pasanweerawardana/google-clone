@@ -10,5 +10,9 @@
     <script async src="https://cse.google.com/cse.js?cx=67132c78e533244d4">
     </script>
     <div class="gcse-searchresults-only"></div>
+    <script>
+        let params = new URLSearchParams(location.search);
+        document.querySelector("#txt-search").value = params.has('q') ? params.get('q') : "";
+    </script>
 </body>
 </html>
