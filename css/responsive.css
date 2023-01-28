@@ -16,8 +16,9 @@
     }
 }
 
-@media all and (mix-height:500px){
-    footer{
+@media all and (max-height: 500px){
+    footer {
+        margin-top: 20px;
         position: relative;
     }
 }
